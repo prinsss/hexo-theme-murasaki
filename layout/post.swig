@@ -26,6 +26,21 @@
     <div class="post-copyright"><p>除另有声明外，本博客文章均采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享(Creative Commons) 署名 4.0 国际许可协议</a> 进行许可。转载请注明原作者与文章出处。</p></div>
   </article>
 
+  {% if (page.prev || page.next) %}
+    <nav class="post-nav">
+      {% if page.prev %}
+      <div class="post-nav-item post-nav-prev">上一篇：
+        <a href="{{ url_for(page.prev.path) }}">{{ page.prev.title }}</a>
+      </div>
+      {% endif %}
+      {% if page.next %}
+      <div class="post-nav-item post-nav-next">下一篇：
+        <a href="{{ url_for(page.next.path) }}">{{ page.next.title }}</a>
+      </div>
+      {% endif %}
+    </nav>
+  {% endif %}
+
   {% if page.comments %}
     {% include '_partials/comments.swig' %}
   {% endif %}
