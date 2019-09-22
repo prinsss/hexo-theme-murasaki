@@ -49,7 +49,7 @@
     {% for name, item in theme.menu_links %}
       {% set itemName = name.toLowerCase() %}
       <li class="menu-item menu-item-{{ itemName }}">
-        <a href="{{ url_for(item.path) }}" title="{{ item.title }}">{{ item.name }}</a>
+        <a href="{{ url_for(item.path) }}" title="{{ item.title }}" target="_blank">{{ item.name }}</a>
       </li>
     {% endfor %}
   </ul>
