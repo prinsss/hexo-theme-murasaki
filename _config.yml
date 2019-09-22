@@ -1,0 +1,101 @@
+# Hexo Theme Murasaki
+
+# ---------------------------------------------------------------
+# Customization
+# ---------------------------------------------------------------
+favicon: /favicon.ico
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+# Set default keywords (Use a comma to separate).
+keywords: "example, blog, hexo"
+
+# Set a canonical link tag in your blog for SEO.
+# See: https://support.google.com/webmasters/answer/139066
+# Tips: Before you enable this, remember to set up your URL in
+# hexo's _config.yml (e.g. `url: http://yourdomain.com`)
+canonical: false
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+# Pages menu widget
+menu_pages:
+  archives:
+    name: 归档
+    path: /archives/
+  about:
+    name: 关于
+    path: /about/
+
+# Links menu widget.
+# Put your social links or whatever you like here.
+menu_links:
+  github:
+    name: GitHub
+    path: https://github.com/example
+  rss:
+    name: RSS Feed
+    path: /atom.xml
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+
+# TODO: Under development
+# Automatically excerpt. Not recommend.
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: false
+  length: 150
+
+# Table of content. Available values:
+# - true: Enable TOC for all posts except ones specify `toc: false`.
+# - false: Disable TOC.
+toc: true
+
+# ---------------------------------------------------------------
+# Third Party Services
+# ---------------------------------------------------------------
+
+# Disqus Short Name
+# TODO: Use https://github.com/SukkaW/DisqusJS
+disqus:
+
+# Google Analytics & Search Console
+google_analytics:
+google_site_verification:
+
+# Google Font CDN (No trailing slash)
+google_font: //fonts.googleapis.com
+
+# TODO: Under development
+lazyload: false
+
+# ---------------------------------------------------------------
+# Miscelaneous
+# ---------------------------------------------------------------
+
+# Show a notice if the post hasn't been updated for more than 1 year.
+# Customize the message in 'layout/_partials/post-warning.swig'.
+expired_warning: false
+
+# Resources for Open Graph meta tags.
+# See: https://hexo.io/docs/helpers.html#open-graph
+open_graph:
+  # twitter_id:
+  # twitter_site:
+  # google_plus:
+  # fb_admins:
+  # fb_app_id:
+
+# Script Vendors. Set a CDN address for the vendor you want to customize.
+vendors:
+  hancss: //cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.css
+  hancss_script: //cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.js
+  highlightjs: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js
+  highlightjs_style: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css
+  dayjs: //cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.16/dayjs.min.js

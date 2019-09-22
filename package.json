@@ -1,0 +1,17 @@
+{
+  "name": "hexo-theme-murasaki",
+  "version": "0.1.0",
+  "description": "Yet another minimalist theme for Hexo.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/printempw/hexo-theme-murasaki.git"
+  },
+  "homepage": "https://github.com/printempw/hexo-theme-murasaki",
+  "keywords": [
+    "hexo",
+    "theme",
+    "murasaki"
+  ],
+  "author": "printempw <printempw@gmail.com>",
+  "license": "MIT"
+}
