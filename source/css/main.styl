@@ -7,22 +7,22 @@ $color-text-secondary  = #999;
 $color-code-bg         = #F7F7F7;
 
 // Fonts
-$font-family-chinese   = 'Biaodian Pro Sans GB', 'PingFang SC', 'Microsoft YaHei';
-$font-family-base      = 'PT Serif', Georgia, Times, $font-family-chinese, sans-serif;
+$font-family-chinese   = 'PingFang SC', 'Microsoft YaHei';
+$font-family-base      = 'PT Serif', Georgia, $font-family-chinese, sans-serif;
 $font-family-headings  = 'Roboto Slab', 'Noto Serif SC', $font-family-base;
 $font-family-content   = $font-family-base;
-$font-family-monospace = 'Source Code Pro', consolas, Menlo, Courier, $font-family-chinese, monospace;
+$font-family-monospace = 'Source Code Pro', consolas, Courier, $font-family-chinese, monospace;
 
 // Responsive
 $content-width-desktop = 900px;
 
 // Reset
-h-hangable > h-cs h-char.bd-end {
-  line-height: 1.4 !important;
+h-hangable h-cs h-char.bd-end {
+  line-height: 1.2 !important;
 }
 
 h-char.biaodian {
-  font-family: 'Biaodian Pro Sans GB', $font-family-base;
+  font-family: $font-family-chinese, sans-serif;
 }
 
 em:lang(ja), em:lang(zh) {
