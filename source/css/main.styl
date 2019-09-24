@@ -272,10 +272,9 @@ table:not(.highlight) {
     font-weight: bold;
   }
 
-  // Copied from GitHub
   td, th {
     padding: 6px 13px;
-    border: 1px solid #dfe2e5;
+    border: 1px solid #DDD;
   }
 
   tr {
@@ -283,7 +282,11 @@ table:not(.highlight) {
   }
 
   tr:nth-child(2n) {
-    background-color: #f9f9f9;
+    background-color: $color-code-bg;
+
+    code {
+      background-color: #FFF;
+    }
   }
 }
 
