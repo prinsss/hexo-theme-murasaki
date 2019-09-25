@@ -497,17 +497,31 @@ aside {
 
 // Third-party services
 #dsqjs {
-  * {
-    font-family: $font-family-content !important;
-    color: #333;
+  header, footer, section {
+    * {
+      font-family: $font-family-content;
+      color: #333;
+    }
+
+    a:not(.dsqjs-load-more) {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-variant;
+        text-decoration: underline;
+      }
+    }
   }
 
-  a {
-    color: $color-primary !important;
+  header {
+    border-bottom: none;
 
-    &:hover {
-      color: $color-primary-variant;
-      text-decoration: underline;
+    .dsqjs-tab-active > span:after {
+      background-color: $color-primary-variant !important;
     }
+  }
+
+  .dsqjs-meta {
+    font-family: $font-family-monospace;
   }
 }
