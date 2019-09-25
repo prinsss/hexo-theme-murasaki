@@ -11,8 +11,8 @@
     window.dsqjs = new DisqusJS({
       shortname: '{{ theme.disqus.shortname }}',
       siteName: '{{ config.title }}',
-      identifier: {{ page.path | json }},
-      url: {{ page.permalink | json }},
+      identifier: {{ page.path | json }}.replace('index.html', '').replace(/\/$/, ''),
+      url: {{ page.permalink | json }}.replace('index.html', ''),
       title: '{{ page.title | addslashes }}',
       api: '{{ theme.disqus.api }}',
       apikey: '{{ theme.disqus.apikey }}',
