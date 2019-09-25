@@ -61,9 +61,15 @@ toc: true
 # Third Party Services
 # ---------------------------------------------------------------
 
-# Disqus Short Name
-# TODO: Use https://github.com/SukkaW/DisqusJS
+# DisqusJS - Render Disqus comments using API.
+# See: https://github.com/SukkaW/DisqusJS
 disqus:
+  enable: false
+  shortname:
+  api:
+  apikey:
+  admin:
+  admin_label:
 
 # Google Analytics & Search Console
 google_analytics:
@@ -99,3 +105,5 @@ vendors:
   highlightjs: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js
   highlightjs_style: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css
   dayjs: //cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.16/dayjs.min.js
+  disqusjs: //unpkg.com/disqusjs@1.1/dist/disqus.js
+  disqusjs_style: //unpkg.com/disqusjs@1.2/dist/disqusjs.css
