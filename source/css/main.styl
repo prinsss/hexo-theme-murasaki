@@ -303,23 +303,26 @@ table:not(.highlight) {
   padding-top: 0;
 }
 
-h1.post-title {
-  font-size: 1.8em;
+.post-title {
+  line-height: 1.5;
   margin: 0 0 .5em;
-}
 
-h2.post-title {
-  margin: 0 0 .5em;
-  font-size: 1.5em;
-}
+  h1& {
+    font-size: 1.8em;
+  }
 
-.post-title a {
-  color: $color-text;
-  text-decoration: none;
+  h2& {
+    font-size: 1.6em;
+  }
 
-  &:hover {
-    color: $color-primary;
-    text-decoration: underline;
+  a {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
   }
 }
 
