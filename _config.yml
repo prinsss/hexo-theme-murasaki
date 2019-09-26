@@ -100,10 +100,10 @@ open_graph:
 
 # Script Vendors. Set a CDN address for the vendor you want to customize.
 vendors:
-  hancss: //cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.css
-  hancss_script: //cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.js
-  highlightjs: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js
-  highlightjs_style: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css
-  dayjs: //cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.16/dayjs.min.js
-  disqusjs: //unpkg.com/disqusjs@1.1/dist/disqus.js
-  disqusjs_style: //unpkg.com/disqusjs@1.2/dist/disqusjs.css
+  hancss: //cdn.jsdelivr.net/npm/han-css@3.2.7/dist/han.min.css
+  hancss_script: //cdn.jsdelivr.net/npm/han-css@3.2.7/dist/han.min.js
+  highlightjs: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js
+  highlightjs_style: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/atom-one-light.min.css
+  dayjs: //cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js
+  disqusjs: //cdn.jsdelivr.net/npm/disqusjs@1.1/dist/disqus.js
+  disqusjs_style: //cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
