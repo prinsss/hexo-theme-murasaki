@@ -105,5 +105,5 @@ vendors:
   highlightjs: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js
   highlightjs_style: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/atom-one-light.min.css
   dayjs: //cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js
-  disqusjs: //cdn.jsdelivr.net/npm/disqusjs@1.1/dist/disqus.js
-  disqusjs_style: //cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
+  disqusjs: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.js
+  disqusjs_style: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css
