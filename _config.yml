@@ -100,8 +100,8 @@ open_graph:
 
 # Script Vendors. Set a CDN address for the vendor you want to customize.
 vendors:
-  hancss: //cdn.jsdelivr.net/npm/han-css@3.2.7/dist/han.min.css
-  hancss_script: //cdn.jsdelivr.net/npm/han-css@3.2.7/dist/han.min.js
+  hancss: //cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css
+  hancss_script: //cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
   highlightjs: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js
   highlightjs_style: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/atom-one-light.min.css
   dayjs: //cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js

@@ -16,17 +16,24 @@ $font-family-monospace = 'Source Code Pro', consolas, Courier, $font-family-chin
 // Responsive
 $content-width-desktop = 900px;
 
-// Reset
-h-hangable h-cs h-char.bd-end {
-  line-height: 1.2 !important;
-}
-
+// Overwrite style in Han.css
 h-char.biaodian {
   font-family: $font-family-chinese, sans-serif;
+
+  &[unicode='2018'], // “‘” (U+2018)
+  &[unicode='2019'], // “’” (U+2019)
+  &[unicode='201c'], // ““” (U+201C)
+  &[unicode='201d']{ // “”” (U+201D)
+    font-family: inherit;
+  }
+
+  h-inner {
+    line-height: 1.2 !important;
+  }
 }
 
+// Restore emphasis mark in Han.css
 em:lang(ja), em:lang(zh) {
-  // Restore emphasis mark in Han.css
   -moz-text-emphasis: initial;
   -webkit-text-emphasis: initial;
   text-emphasis: initial;
@@ -267,6 +274,7 @@ table:not(.highlight) {
   display: block;
   width: 100%;
   overflow: auto;
+  border-collapse: collapse;
 
   th {
     font-weight: bold;
