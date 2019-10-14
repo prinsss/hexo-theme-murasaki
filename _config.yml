@@ -107,3 +107,4 @@ vendors:
   dayjs: //cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js
   disqusjs: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.js
   disqusjs_style: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css
+  medium_zoom: //cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js

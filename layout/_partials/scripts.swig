@@ -1,6 +1,8 @@
 <script type="text/javascript" src="{{ theme.vendors.hancss_script }}"></script>
 <script type="text/javascript" src="{{ theme.vendors.highlightjs }}"></script>
+<script type="text/javascript" src="{{ theme.vendors.medium_zoom }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script>mediumZoom(document.querySelectorAll('.post-content :not(a) > img, .post-content > img'), { margin: 24 });</script>
 
 {% if theme.google_analytics %}
 <script>
