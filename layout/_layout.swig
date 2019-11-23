@@ -18,7 +18,7 @@
 <main>
   <div class="container">
     <div class="row">
-      <section class="content col-md-8 col-12 han-init-context">
+      <section class="content col-md-8 col-12">
         {% block content %}{% endblock %}
       </section>
       <aside class="sidebar col-md-3 offset-md-1 col-12">

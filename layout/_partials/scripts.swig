@@ -3,6 +3,12 @@
 <script type="text/javascript" src="{{ theme.vendors.medium_zoom }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>mediumZoom(document.querySelectorAll('.post-content :not(a) > img, .post-content > img'), { margin: 24 });</script>
+<script>
+  Han(document.querySelector('section.content')).setRoutine([
+    'initCond', 'renderElem', 'renderJiya', 'correctBasicBD', 'substCombLigaWithPUA'
+    // 'renderHanging', 'renderHWS'
+  ]).render();
+</script>
 
 {% if theme.google_analytics %}
 <script>
