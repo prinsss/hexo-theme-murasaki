@@ -100,11 +100,11 @@ open_graph:
 
 # Script Vendors. Set a CDN address for the vendor you want to customize.
 vendors:
-  hancss: //cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css
-  hancss_script: //cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
-  highlightjs: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/highlight.min.js
-  highlightjs_style: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/atom-one-light.min.css
-  dayjs: //cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js
-  disqusjs: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.js
-  disqusjs_style: //cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.css
-  medium_zoom: //cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js
+  hancss: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css
+  hancss_script: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
+  highlightjs: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js
+  highlightjs_style: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atom-one-light.min.css
+  dayjs: https://cdn.jsdelivr.net/npm/dayjs@1.8.17/dayjs.min.js
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqus.js
+  disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.css
+  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js
