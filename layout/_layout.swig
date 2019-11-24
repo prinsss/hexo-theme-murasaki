@@ -33,8 +33,8 @@
   {% set year = date(Date.now(), "YYYY") %}
   <div class="container">
     <p>
-      &copy; {{ year }} <a href="{{ config.url }}">{{ config.title }}</a>. Proudly published with <a href="https://hexo.io/" target="_blank">Hexo</a>.
-      Theme <a href="https://github.com/printempw/hexo-theme-murasaki/" target="_blank">Murasaki</a> by printempw.
+      &copy; {{ year }} <a href="{{ config.url }}">{{ config.title }}</a>. Proudly published with
+      <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/printempw/hexo-theme-murasaki/" target="_blank">Murasaki</a>.
     </p>
   </div>
 </footer>
