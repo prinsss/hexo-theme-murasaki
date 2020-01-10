@@ -76,7 +76,7 @@ google_analytics:
 google_site_verification:
 
 # Google Font CDN (No trailing slash)
-google_font: //fonts.googleapis.com
+google_font: https://fonts.googleapis.com
 
 # TODO: Under development
 lazyload: false
