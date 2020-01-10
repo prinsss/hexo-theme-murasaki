@@ -1,6 +1,5 @@
 // Colors
 $color-primary         = #7065A3; // https://irocore.com/sumire-iro/
-$color-primary-variant = #8F82BC; // https://irocore.com/fujimurasaki/
 $color-boder           = #EEE;
 $color-text            = #333;
 $color-text-secondary  = #999;
@@ -169,7 +168,6 @@ a {
   transition: all 0.2s ease-out;
 
   &:hover {
-    color: $color-primary-variant;
     text-decoration: underline;
   }
 }
@@ -323,11 +321,9 @@ table:not(.highlight) {
 
   a {
     color: $color-text;
-    text-decoration: none;
 
     &:hover {
       color: $color-primary;
-      text-decoration: underline;
     }
   }
 }
@@ -336,14 +332,6 @@ table:not(.highlight) {
   font-family: $font-family-monospace;
   color: $color-text-secondary;
   margin: 0 0 1em;
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
 
   .post-meta-tags {
     a.tag-link:before {
@@ -397,10 +385,6 @@ table:not(.highlight) {
     margin-bottom: 0;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5em;
   }
@@ -426,7 +410,6 @@ table:not(.highlight) {
   }
 
   a.more-link {
-    text-decoration: none;
     font-family: $font-family-monospace;
   }
 }
@@ -443,19 +426,13 @@ table:not(.highlight) {
   h3.post-title {
     margin: 0;
 
-    a {
-      text-decoration: none;
-    }
-
     a:hover {
       color: $color-primary;
-      text-decoration: underline;
     }
   }
 
   .post-meta .post-meta-item a {
     color: $color-text-secondary !important;
-    text-decoration: none;
   }
 }
 
@@ -516,7 +493,6 @@ aside {
       color: $color-primary;
 
       &:hover {
-        color: $color-primary-variant;
         text-decoration: underline;
       }
     }
@@ -526,7 +502,7 @@ aside {
     border-bottom: none;
 
     .dsqjs-tab-active > span:after {
-      background-color: $color-primary-variant !important;
+      background-color: $color-primary !important;
     }
 
     .dsqjs-order {
