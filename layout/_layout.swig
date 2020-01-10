@@ -9,7 +9,7 @@
 <header>
   <div class="container">
     <div class="site-name">
-      <a class="logo" href="{{ config.url }}">{{ config.title }}</a>
+      <a class="logo" href="{{ config.root }}">{{ config.title }}</a>
       <span class="description">{{ config.subtitle }}</span>
     </div>
   </div>
