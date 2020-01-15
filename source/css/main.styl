@@ -15,7 +15,7 @@ $font-family-monospace = 'Source Code Pro', consolas, Courier, $font-family-chin
 // Responsive
 $content-width-desktop = 900px;
 
-// Overwrite style in Han.css
+// Override style in Han.css
 h-char.biaodian {
   font-family: $font-family-chinese, sans-serif;
 
@@ -42,6 +42,11 @@ em:lang(ja), em:lang(zh) {
   padding-bottom: initial;
   border-bottom-width: initial;
   padding-bottom: initial;
+}
+
+// Override style in highlight.js
+.hljs {
+  background: $color-code-bg;
 }
 
 // Minimal responsive
@@ -183,12 +188,6 @@ code {
   border-radius: 3px;
 }
 
-blockquote code {
-  padding: .1em .3em;
-  background-color: #FFF;
-  border: 1px solid $color-boder;
-}
-
 // Copied from GitHub
 kbd {
   padding: .1em .5em;
@@ -201,7 +200,6 @@ kbd {
 
 pre {
   white-space: pre;
-  background-color: $color-code-bg;
   border: 0;
   overflow: auto;
   font-size: 90%;
@@ -210,14 +208,10 @@ pre {
 
   code {
     display: block;
-    background-color: transparent;
+    background-color: $color-code-bg;
     padding: initial;
     font-size: 100%;
     padding: 1em !important;
-
-    &.hljs {
-      background: transparent;
-    }
   }
 }
 
@@ -240,6 +234,15 @@ quote-style = @block {
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  code {
+    padding: .1em .3em;
+    border: 1px solid $color-boder;
+  }
+
+  code, code.hljs {
+    background-color: rgba(#FFF, 0.7);
   }
 }
 
