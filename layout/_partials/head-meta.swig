@@ -53,6 +53,6 @@
 
 {# Styles #}
 <link rel="stylesheet" href="{{ theme.vendors.hancss }}">
-<link rel="stylesheet" href="{{ theme.google_font }}/css?family=Fira+Mono|PT+Serif|Roboto+Slab|Noto+Serif+SC&display=swap">
+<link rel="stylesheet" href="{{ theme.google_font }}/css?family=Fira+Mono|PT+Serif|Roboto+Slab:600|Noto+Serif+SC:600&display=swap">
 <link rel="stylesheet" href="{{ theme.vendors.highlightjs_style }}">
 <link rel="stylesheet" href="{{ url_for('css/main.css') }}">
