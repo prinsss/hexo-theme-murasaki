@@ -7,13 +7,11 @@ if (!config.lazyload || !config.lazyload.enable) {
   return;
 }
 
-hexo.extend.filter.register('after_post_render', data => {
+hexo.extend.filter.register('after_render:html', html => {
   const loading = url_for(config.lazyload.loading_image);
 
-  data.content = data.content.replace(
+  return html.replace(
     /(<img[^>]*) src="(.*?)"/gim,
     `$1 src="$2" srcset="${loading}" data-srcset="$2"`
   );
-
-  return data;
 });
