@@ -1,13 +1,17 @@
 <script type="text/javascript" src="{{ theme.vendors.hancss_script }}"></script>
 <script type="text/javascript" src="{{ theme.vendors.highlightjs }}"></script>
 <script type="text/javascript" src="{{ theme.vendors.medium_zoom }}"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script>mediumZoom(document.querySelectorAll('.post-content :not(a) > img, .post-content > img'), { margin: 24 });</script>
+<script type="text/javascript" src="{{ theme.vendors.vanilla_lazyload }}"></script>
 <script>
+  hljs.initHighlightingOnLoad();
   Han(document.querySelector('section.content')).setRoutine([
     'initCond', 'renderElem', 'renderJiya', 'correctBasicBD', 'substCombLigaWithPUA'
     // 'renderHanging', 'renderHWS'
   ]).render();
+  new LazyLoad({
+    elements_selector: '.post-content img',
+    callback_loaded: el => el.parentNode.nodeName.toLowerCase() === 'a' || mediumZoom(el, { margin: 24 })
+  });
 </script>
 
 {% if theme.google_analytics %}

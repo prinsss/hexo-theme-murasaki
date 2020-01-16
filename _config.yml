@@ -57,6 +57,11 @@ auto_excerpt:
 # - false: Disable TOC.
 toc: true
 
+# Image Lazyload
+lazyload:
+  enable: true
+  loading_image: images/loading.jpg
+
 # ---------------------------------------------------------------
 # Third Party Services
 # ---------------------------------------------------------------
@@ -77,9 +82,6 @@ google_site_verification:
 
 # Google Font CDN (No trailing slash)
 google_font: https://fonts.googleapis.com
-
-# TODO: Under development
-lazyload: false
 
 # ---------------------------------------------------------------
 # Miscelaneous
@@ -108,3 +110,4 @@ vendors:
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqus.js
   disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.css
   medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js
+  vanilla_lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js
