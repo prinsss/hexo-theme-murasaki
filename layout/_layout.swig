@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ config.language }}">
 <head>
   <title>{% block title %}{% endblock %}</title>

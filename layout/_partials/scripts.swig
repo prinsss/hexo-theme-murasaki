@@ -1,7 +1,7 @@
-<script type="text/javascript" src="{{ theme.vendors.hancss_script }}"></script>
-<script type="text/javascript" src="{{ theme.vendors.highlightjs }}"></script>
-<script type="text/javascript" src="{{ theme.vendors.medium_zoom }}"></script>
-<script type="text/javascript" src="{{ theme.vendors.vanilla_lazyload }}"></script>
+<script src="{{ theme.vendors.hancss_script }}"></script>
+<script src="{{ theme.vendors.highlightjs }}"></script>
+<script src="{{ theme.vendors.medium_zoom }}"></script>
+<script src="{{ theme.vendors.vanilla_lazyload }}"></script>
 <script>
   hljs.initHighlightingOnLoad();
   Han(document.querySelector('section.content')).setRoutine([

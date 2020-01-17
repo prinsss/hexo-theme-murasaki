@@ -13,7 +13,8 @@ h-char.biaodian {
 }
 
 // Restore emphasis mark in Han.css
-em:lang(ja), em:lang(zh) {
+em:lang(ja),
+em:lang(zh) {
   -moz-text-emphasis: initial;
   -webkit-text-emphasis: initial;
   text-emphasis: initial;
@@ -37,7 +38,7 @@ em:lang(ja), em:lang(zh) {
   header, footer, section {
     * {
       font-family: $font-family-content;
-      color: #333;
+      color: $color-text;
     }
 
     a:not(.dsqjs-load-more) {
