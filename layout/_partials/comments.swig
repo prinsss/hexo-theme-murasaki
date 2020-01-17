@@ -43,9 +43,14 @@
   })();
 
   // Scroll to comments automatically if #comment-xxx anchor specified
-  if (location.hash.indexOf('#comment-') !== -1) {
-    document.getElementById('disqus_thread').scrollIntoView();
-  }
+  window.addEventListener('load', function () {
+    // I don't know why, it just works.
+    window.setTimeout(function () {
+      if (location.hash.indexOf('#comment-') !== -1) {
+        document.getElementById('disqus_thread').scrollIntoView(true);
+      }
+    }, 100);
+  }, false);
 </script>
 
 {% endif %}
