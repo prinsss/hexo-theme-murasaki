@@ -4,7 +4,6 @@
 
 <link rel="stylesheet" href="{{ theme.vendors.disqusjs_style }}">
 <script src="{{ theme.vendors.disqusjs }}"></script>
-
 <script>
   // Load comments with DisqusJS
   function loadComments() {
@@ -21,8 +20,8 @@
     });
   }
 
-  // Lazy laod {# Credit: https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/comments/disqus.swig #}
-  (function() {
+  // Lazy load {# Credit: https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/comments/disqus.swig #}
+  (function () {
     var offsetTop = document.getElementById('disqus_thread').offsetTop - window.innerHeight;
     if (offsetTop <= 0) {
       // Load directly when there's no scrollbar
@@ -42,6 +41,11 @@
       window.addEventListener('scroll', disqusScroll);
     }
   })();
+
+  // Scroll to comments automatically if #comment-xxx anchor specified
+  if (location.hash.indexOf('#comment-') !== -1) {
+    document.getElementById('disqus_thread').scrollIntoView();
+  }
 </script>
 
 {% endif %}
