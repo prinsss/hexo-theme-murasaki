@@ -1,0 +1,50 @@
+// Minimal responsive
+mobile() {
+  @media (max-width: 767px) {
+    {block};
+  }
+}
+
+tablet() {
+  @media (min-width: 768px) and (max-width: 991px) {
+    {block};
+  }
+}
+
+desktop() {
+  @media (min-width: 992px) {
+    {block};
+  }
+}
+
+// Minimal grid system
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12, .col-md-3, .col-md-8, .offset-md-1 {
+  position: relative;
+  width: 100%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .offset-md-1 {
+    margin-left: 8.3333333333%;
+  }
+}

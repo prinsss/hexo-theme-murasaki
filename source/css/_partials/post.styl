@@ -1,0 +1,161 @@
+// Post style
+.post {
+  padding: 1.5em 0;
+
+  & + & {
+    border-top: 1px solid $color-boder;
+  }
+}
+
+.post:first-child {
+  padding-top: 0;
+}
+
+.post-title {
+  line-height: 1.5;
+  margin: 0 0 .5em;
+
+  h1& {
+    font-size: 1.8em;
+  }
+
+  h2& {
+    font-size: 1.6em;
+  }
+
+  a {
+    color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.post-meta {
+  font-family: $font-family-monospace;
+  color: $color-text-secondary;
+  margin: 0 0 1em;
+
+  .post-meta-tags {
+    a.tag-link:before {
+      content: '#';
+    }
+
+    // Don't break tags line
+    white-space: nowrap;
+  }
+
+  .post-meta-item + .post-meta-item::before {
+    content: ' / ';
+  }
+
+  +mobile() {
+    .post-meta-item-indicator {
+      display: none;
+    }
+  }
+}
+
+.post-collapse .post-meta {
+  margin: 0;
+}
+
+.post-toc {
+  display: none;
+  margin: 1em 0 0;
+  padding: 1em .5em;
+  font-size: 90%;
+
+  ul, ol {
+    list-style: none;
+    line-height: 1.6;
+    padding-left: 1em;
+    margin: 0;
+  }
+}
+
++mobile() {
+  article .post-toc {
+    display: block;
+  }
+}
+
+.post-toc, .post-copyright, .post-warning {
+  {quote-style}
+  margin: 1em 0;
+}
+
+.post-content {
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5em;
+  }
+
+  ul, ol {
+    line-height: 2;
+  }
+
+  hr {
+    border: none;
+    margin: 1.5em 0;
+    text-align: center;
+    display: block;
+    height: auto;
+
+    &::after {
+      content: "***";
+      font-family: $font-family-monospace;
+      letter-spacing: 2em;
+      padding-left: 2em;
+      color: $color-text-secondary;
+    }
+  }
+
+  a.more-link {
+    font-family: $font-family-monospace;
+  }
+}
+
+.comments {
+  margin: 3em 0 1em;
+}
+
+.post-collapse {
+  h3.post-title {
+    margin: 0;
+
+    a:hover {
+      color: $color-primary;
+    }
+  }
+
+  .post-meta .post-meta-item a {
+    color: $color-text-secondary !important;
+  }
+}
+
+.archive-year-collection {
+  margin: 0 !important;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  color: $color-primary;
+  border-bottom: 1px solid $color-boder;
+}
+
+.pagination {
+  border-top: 1px solid $color-boder;
+  padding: 2em 0 1em;
+  text-align: center;
+
+  a, span {
+    margin: .5em;
+  }
+}

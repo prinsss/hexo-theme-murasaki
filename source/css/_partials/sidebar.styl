@@ -1,0 +1,26 @@
+aside {
+  .widget {
+    font-size: 90%;
+
+    ul, ol {
+      list-style: none;
+      line-height: 1.6;
+      padding-left: 1em;
+    }
+
+    // first-level
+    >ul, >ol {
+      padding-left: 0;
+    }
+  }
+}
+
++mobile() {
+  .widget-toc {
+    display: none;
+  }
+
+  #widget-recent-posts {
+    display: none;
+  }
+}

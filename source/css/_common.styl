@@ -1,0 +1,156 @@
+body {
+  font-family: $font-family-content;
+  color: $color-text;
+  font-size: 16px;
+
+  +mobile() {
+    padding: 0 1.5em;
+  }
+
+  +tablet() {
+    padding: 0 1.5em;
+  }
+}
+
+::selection {
+  background: rgba($color-primary, 0.6);
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+del {
+  color: #777;
+}
+
+strong {
+  font-family: $font-family-content !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  font-weight: 600;
+  color: #000;
+
+  &:hover .headerlink:before {
+    content: '#';
+    float: left;
+    padding-right: 1em;
+    margin-left: -0.8em;
+    position: absolute;
+  }
+}
+
+a {
+  color: $color-primary;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+pre, code, kbd, samp {
+  font-family: $font-family-monospace !important;
+}
+
+code {
+  padding: .2em .4em;
+  font-size: 90%;
+  background-color: $color-code-bg;
+  border-radius: 3px;
+}
+
+// Copied from GitHub
+kbd {
+  padding: .1em .5em;
+  font-size: 90%;
+  background: #FFF;
+  border: 1px solid #ADB3B9;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.2), 0 0 0 2px #FFF inset;
+}
+
+pre {
+  white-space: pre;
+  border: 0;
+  overflow: auto;
+  font-size: 90%;
+  line-height: 1.5;
+  border-radius: 3px;
+
+  code {
+    display: block;
+    background-color: $color-code-bg;
+    padding: initial;
+    font-size: 100%;
+    padding: 1em !important;
+  }
+}
+
+// General blockquote style
+quote-style = @block {
+  font-family: $font-family-content !important;
+
+  // Reset
+  margin: 0;
+  margin-left: 0 !important;
+
+  padding: .7em 1em;
+  border-left: .25em solid rgba($color-primary, 0.6);
+  background-color: rgba($color-primary, 0.05);
+
+  p {
+    margin-top: 0;
+    margin-bottom: .7em;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  code {
+    padding: .1em .3em;
+    border: 1px solid $color-boder;
+  }
+
+  code, code.hljs {
+    background-color: rgba(#FFF, 0.7);
+  }
+}
+
+blockquote {
+  {quote-style}
+}
+
+// Avoid styling gist
+table:not(.highlight) {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+
+  th {
+    font-weight: bold;
+  }
+
+  td, th {
+    padding: 6px 13px;
+    border: 1px solid #DDD;
+  }
+
+  tr {
+    background-color: #FFF;
+
+    code {
+      font-size: 100%;
+      background-color: transparent;
+    }
+  }
+
+  tr:nth-child(2n) {
+    background-color: $color-code-bg;
+  }
+}

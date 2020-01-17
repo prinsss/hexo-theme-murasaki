@@ -1,0 +1,67 @@
+// Override style in Han.css
+h-char.biaodian {
+  font-family: $font-family-chinese, sans-serif;
+
+  &[unicode='2018'], // “‘” (U+2018)
+  &[unicode='2019'], // “’” (U+2019)
+  &[unicode='201c'], // ““” (U+201C)
+  &[unicode='201d']{ // “”” (U+201D)
+    font-family: inherit;
+  }
+
+  line-height: 1 !important;
+}
+
+// Restore emphasis mark in Han.css
+em:lang(ja), em:lang(zh) {
+  -moz-text-emphasis: initial;
+  -webkit-text-emphasis: initial;
+  text-emphasis: initial;
+  -moz-text-emphasis-position: initial;
+  -webkit-text-emphasis-position: initial;
+  text-emphasis-position: initial;
+  font-style: italic;
+  border-bottom: initial;
+  padding-bottom: initial;
+  border-bottom-width: initial;
+  padding-bottom: initial;
+}
+
+// Override style in highlight.js
+.hljs {
+  background: $color-code-bg;
+}
+
+// Third-party services
+#dsqjs {
+  header, footer, section {
+    * {
+      font-family: $font-family-content;
+      color: #333;
+    }
+
+    a:not(.dsqjs-load-more) {
+      color: $color-primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  header {
+    border-bottom: none;
+
+    .dsqjs-tab-active > span:after {
+      background-color: $color-primary !important;
+    }
+
+    .dsqjs-order {
+      margin-bottom: 0;
+    }
+  }
+
+  .dsqjs-meta {
+    font-family: $font-family-monospace;
+  }
+}
