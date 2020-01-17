@@ -10,7 +10,9 @@
   ]).render();
   new LazyLoad({
     elements_selector: '.post-content img',
-    callback_loaded: el => el.parentNode.nodeName.toLowerCase() === 'a' || mediumZoom(el, { margin: 24 })
+    callback_loaded: function (el) {
+      el.parentNode.nodeName.toLowerCase() === 'a' || mediumZoom(el, { margin: 24 });
+    }
   });
 </script>
 
