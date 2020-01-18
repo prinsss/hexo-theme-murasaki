@@ -80,8 +80,12 @@ disqus:
   admin:
   admin_label:
 
-# Google Analytics & Search Console
+# Google Analytics. For server-side ga,
+# See: https://github.com/SukkaW/cloudflare-workers-async-google-analytics
 google_analytics:
+google_analytics_api:
+
+# Google Search Console
 google_site_verification:
 
 # Google Font CDN (No trailing slash)
@@ -115,3 +119,4 @@ vendors:
   disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.css
   medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js
   vanilla_lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js
+  cfga: https://cdn.jsdelivr.net/npm/cfga@1.0.1/cfga.min.js
