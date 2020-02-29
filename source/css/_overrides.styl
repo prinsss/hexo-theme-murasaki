@@ -1,15 +1,21 @@
 // Override style in Han.css
 h-char.biaodian {
-  font-family: $font-family-chinese, sans-serif;
+  font-family: $font-family-base, sans-serif;
 
-  &[unicode='2018'], // “‘” (U+2018)
-  &[unicode='2019'], // “’” (U+2019)
-  &[unicode='201c'], // ““” (U+201C)
-  &[unicode='201d']{ // “”” (U+201D)
+  &[unicode='2018'], // ‘ (U+2018)
+  &[unicode='2019'], // ’ (U+2019)
+  &[unicode='201c'], // “ (U+201C)
+  &[unicode='201d']{ // ” (U+201D)
     font-family: inherit;
   }
 
   line-height: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  h-char.biaodian {
+    font-family: $font-family-headings;
+  }
 }
 
 // Restore emphasis mark in Han.css
