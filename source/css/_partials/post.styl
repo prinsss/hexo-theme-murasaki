@@ -37,8 +37,15 @@
   color: $color-text-secondary;
   margin: 0 0 1em;
   // Don't break post meta line
-  overflow-x: hidden;
   white-space: nowrap;
+
+  // Hide scroll bar while scrollable
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .post-meta-tags {
     a.tag-link:before {
