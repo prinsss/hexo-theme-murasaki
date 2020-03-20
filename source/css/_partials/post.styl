@@ -36,14 +36,21 @@
   font-family: $font-family-monospace;
   color: $color-text-secondary;
   margin: 0 0 1em;
+  // Don't break post meta line
+  overflow-x: hidden;
+  white-space: nowrap;
 
   .post-meta-tags {
     a.tag-link:before {
       content: '#';
     }
+  }
 
-    // Don't break tags line
-    white-space: nowrap;
+  .post-meta-views {
+    // Hide before loaded
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
   }
 
   .post-meta-item + .post-meta-item::before {

@@ -18,3 +18,9 @@
     无标签
   {% endif %}
 </span>
+
+{% if theme.post_views_counter %}
+<span class="post-meta-item post-meta-views">
+  <span class="pv-counter">loading</span> views
+</span>
+{% endif %}

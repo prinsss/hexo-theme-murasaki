@@ -91,6 +91,14 @@ google_site_verification:
 # Google Font CDN (No trailing slash)
 google_font: https://fonts.googleapis.com
 
+# Post Views Counter
+# Should implements: HTTP GET `${api}?pages=foo,bar,baz`
+# which returns JSON in format: {"data": {"foo": 123, "bar": 456, "baz": 789}}
+# See: https://github.com/printempw/google-analytics-hit-counter
+post_views_counter:
+  enable: false
+  api:
+
 # ---------------------------------------------------------------
 # Miscelaneous
 # ---------------------------------------------------------------

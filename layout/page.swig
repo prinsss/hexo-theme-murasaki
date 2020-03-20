@@ -11,6 +11,12 @@
       <span class="post-meta-item post-meta-date">
         <time datetime="{{ moment(page.date).format() }}">{{ date(page.date) }}</time>
       </span>
+
+      {% if theme.post_views_counter %}
+      <span class="post-meta-item post-meta-views">
+        <span class="pv-counter">loading</span> views
+      </span>
+      {% endif %}
     </div>
 
     <div class="post-content">{{ page.content }}</div>

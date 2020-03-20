@@ -35,3 +35,10 @@
     </script>
   {%- endif %}
 {%- endif %}
+
+{%- if theme.post_views_counter.enable %}
+  <script>
+    window.post_views_api = '{{ theme.post_views_counter.api }}';
+  </script>
+  <script src="{{ url_for('js/post-views.js') }}"></script>
+{%- endif %}
