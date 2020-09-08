@@ -13,10 +13,10 @@
       </div>
       <div class="post-content">
         {% if post.excerpt %}
-          {{ post.excerpt }}
+          {{ lazyloadImage(post.excerpt) }}
           <p><a class="more-link" href="{{ url_for(post.path) }}#more">&gt; READ MORE...</a></p>
         {% else %}
-          {{ post.content }}
+          {{ lazyloadImage(post.content) }}
         {% endif %}
       </div>
     </article>

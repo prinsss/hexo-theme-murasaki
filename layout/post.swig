@@ -22,7 +22,7 @@
       <div class="post-toc">{{ toc_contents }}</div>
     {% endif %}
 
-    <div class="post-content">{{ page.content }}</div>
+    <div class="post-content">{{ lazyloadImage(page.content) }}</div>
     <div class="post-copyright"><p>除另有声明外，本博客文章均采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享(Creative Commons) 署名 4.0 国际许可协议</a> 进行许可。转载请注明原作者与文章出处。</p></div>
   </article>
 
