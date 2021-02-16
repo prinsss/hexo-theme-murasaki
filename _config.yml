@@ -120,11 +120,11 @@ open_graph:
 vendors:
   hancss: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css
   hancss_script: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
-  highlightjs: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js
-  highlightjs_style: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atom-one-light.min.css
-  dayjs: https://cdn.jsdelivr.net/npm/dayjs@1.8.17/dayjs.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqus.js
-  disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.css
-  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.4/dist/medium-zoom.min.js
-  vanilla_lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js
-  cfga: https://cdn.jsdelivr.net/npm/cfga@1.0.1/cfga.min.js
+  highlightjs: https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10.6.0/highlight.min.js
+  highlightjs_style: https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10.6.0/styles/atom-one-light.min.css
+  dayjs: https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js
+  disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css
+  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js
+  vanilla_lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  cfga: https://cdn.jsdelivr.net/npm/cfga@1.0.3/cfga.min.js
