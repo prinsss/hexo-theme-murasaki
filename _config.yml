@@ -6,6 +6,7 @@
 
 # https://irocore.com/sumire-iro/
 primary_color: "#7065a3"
+primary_color_dark: "#bb86fc"
 
 favicon: /favicon.ico
 
@@ -122,6 +123,7 @@ vendors:
   hancss_script: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
   highlightjs: https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10.6.0/highlight.min.js
   highlightjs_style: https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10.6.0/styles/atom-one-light.min.css
+  highlightjs_style_dark: https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10.6.0/styles/atom-one-dark.min.css
   dayjs: https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js
   disqusjs_style: https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css

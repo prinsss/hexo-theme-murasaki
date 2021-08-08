@@ -1,6 +1,7 @@
 header {
   padding: 2em 0;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid;
+  border-color-themed: 'border';
 }
 
 footer {
@@ -24,7 +25,7 @@ main {
 .site-name {
   .logo {
     font-weight: 600;
-    color: $color-text;
+    color-themed: 'text';
     font-size: 2em;
     font-family: $font-family-headings;
   }
@@ -32,12 +33,12 @@ main {
   .description {
     margin: .5em 0 0;
     font-size: 1em;
-    color: $color-text-secondary;
+    color-themed: 'text-secondary';
     display: block;
   }
 
   a {
-    color: $color-text;
+    color-themed: 'text';
   }
 
   a:hover {

@@ -3,7 +3,8 @@
   padding: 1.5em 0;
 
   & + & {
-    border-top: 1px solid $color-border;
+    border-top: 1px solid;
+    border-color-themed: 'border';
   }
 }
 
@@ -24,17 +25,17 @@
   }
 
   a {
-    color: $color-text;
+    color-themed: 'text';
 
     &:hover {
-      color: $color-primary;
+      color-themed: 'primary';
     }
   }
 }
 
 .post-meta {
   font-family: $font-family-monospace;
-  color: $color-text-secondary;
+  color-themed: 'text-secondary';
   margin: 0 0 1em;
   // Don't break post meta line
   white-space: nowrap;
@@ -131,7 +132,7 @@
       font-family: $font-family-monospace;
       letter-spacing: 2em;
       padding-left: 2em;
-      color: $color-text-secondary;
+      color-themed: 'secondary';
     }
   }
 
@@ -149,12 +150,12 @@
     margin: 0;
 
     a:hover {
-      color: $color-primary;
+      color-themed: 'primary';
     }
   }
 
   .post-meta .post-meta-item a {
-    color: $color-text-secondary !important;
+    color-themed: 'text-secondary';
   }
 }
 
@@ -162,12 +163,14 @@
   margin: 0 !important;
   padding-bottom: 1em;
   padding-top: 1em;
-  color: $color-primary;
-  border-bottom: 1px solid $color-border;
+  color-themed: 'primary';
+  border-bottom: 1px solid;
+  border-color-themed: 'border';
 }
 
 .pagination {
-  border-top: 1px solid $color-border;
+  border-top: 1px solid;
+  border-color-themed: 'border';
   padding: 2em 0 1em;
   text-align: center;
 

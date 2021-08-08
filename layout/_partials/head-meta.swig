@@ -31,5 +31,6 @@
 
 <link rel="stylesheet" href="{{ theme.vendors.hancss }}">
 <link rel="stylesheet" href="{{ theme.google_font }}/css?family=Fira+Mono|Roboto+Slab:400,600|Noto+Serif+SC:600&display=swap">
-<link rel="stylesheet" href="{{ theme.vendors.highlightjs_style }}">
+<link rel="stylesheet" href="{{ theme.vendors.highlightjs_style_dark }}" media="screen and (prefers-color-scheme: dark)">
+<link rel="stylesheet" href="{{ theme.vendors.highlightjs_style }}" media="screen and (prefers-color-scheme: light)">
 <link rel="stylesheet" href="{{ url_for('css/main.css') }}">

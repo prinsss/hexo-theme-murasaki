@@ -51,3 +51,41 @@ desktop() {
     margin-left: 8.3333333333%;
   }
 }
+
+// Support light & dark theme
+when-light() {
+  @media (prefers-color-scheme: light) {
+    {block};
+  }
+}
+
+when-dark() {
+  @media (prefers-color-scheme: dark) {
+    {block};
+  }
+}
+
+// For max compatibility, we won't use CSS variables
+color-themed(name) {
+  color: lookup('$color-' + name);
+
+  +when-dark() {
+    color: lookup('$color-' + name + '-dark');
+  }
+}
+
+border-color-themed(name) {
+  border-color: lookup('$color-' + name);
+
+  +when-dark() {
+    border-color: lookup('$color-' + name + '-dark');
+  }
+}
+
+background-color-themed(name) {
+  background-color: lookup('$color-' + name);
+
+  +when-dark() {
+    background-color: lookup('$color-' + name + '-dark');
+  }
+}

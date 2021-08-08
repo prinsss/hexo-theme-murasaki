@@ -36,7 +36,7 @@ em:lang(zh) {
 
 // Override style in highlight.js
 .hljs {
-  background: $color-code-bg;
+  background-color-themed: 'code-bg';
 }
 
 // Third-party services
@@ -44,11 +44,11 @@ em:lang(zh) {
   header, footer, section {
     * {
       font-family: $font-family-content;
-      color: $color-text;
+      color-themed: 'text';
     }
 
     a:not(.dsqjs-load-more) {
-      color: $color-primary;
+      color-themed: 'primary';
 
       &:hover {
         text-decoration: underline;
@@ -61,6 +61,10 @@ em:lang(zh) {
 
     .dsqjs-tab-active > span:after {
       background-color: $color-primary !important;
+
+      +when-dark() {
+        background-color: $color-primary-dark !important;
+      }
     }
 
     .dsqjs-order {
