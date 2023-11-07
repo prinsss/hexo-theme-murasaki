@@ -61,6 +61,10 @@
     transition: .2s;
   }
 
+  .post-meta-tags a::before {
+    content: '#';
+  }
+
   .post-meta-item + .post-meta-item::before {
     content: ' / ';
   }
@@ -136,7 +140,12 @@
     }
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   a.more-link {
+    text-decoration: none;
     font-family: $font-family-monospace;
   }
 }
@@ -152,6 +161,10 @@
     a:hover {
       color-themed: 'primary';
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .post-meta .post-meta-item a {
