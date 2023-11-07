@@ -81,6 +81,23 @@ disqus:
   admin:
   admin_label:
 
+# Giscus - A comment system powered by GitHub Discussions.
+# See: https://github.com/giscus/giscus
+giscus:
+  enable: false
+  repo:
+  repo_id:
+  category: Announcements
+  category_id:
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: top
+  theme: preferred_color_scheme
+  lang: en
+  loading: lazy
+
 # Google Analytics. For server-side ga,
 # See: https://github.com/SukkaW/cloudflare-workers-async-google-analytics
 google_analytics:
@@ -130,3 +147,4 @@ vendors:
   medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js
   vanilla_lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
   cfga: https://cdn.jsdelivr.net/npm/cfga@1.0.3/cfga.min.js
+  giscus: https://giscus.app/client.js
