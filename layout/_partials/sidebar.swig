@@ -1,4 +1,4 @@
-{% if is_home() %}
+{% if theme.sidebar.recent_posts and is_home() %}
 <section class="widget" id="widget-recent-posts">
   <h3 class="widget-title">最新文章</h3>
   <ul class="menu">
@@ -14,6 +14,19 @@
 </section>
 {% endif %}
 
+{% if theme.sidebar.categories %}
+<section class="widget" id="widget-categories">
+  <h3 class="widget-title">分类</h3>
+  {% set categories = list_categories({ show_count: false }) %}
+  {% if categories %}
+    {{ categories }}
+  {% else %}
+    <p>无分类</p>
+  {% endif %}
+</section>
+{% endif %}
+
+{% if theme.sidebar.pages %}
 <section class="widget" id="widget-pages">
   <h3 class="widget-title">页面</h3>
   <ul class="menu">
@@ -25,26 +38,11 @@
     {% endfor %}
   </ul>
 </section>
-
-<section class="widget" id="widget-categories">
-  <h3 class="widget-title">分类</h3>
-  {% set categories = list_categories({ show_count: false }) %}
-  {% if categories %}
-    {{ categories }}
-  {% else %}
-    <p>无分类</p>
-  {% endif %}
-</section>
-
-{% if is_home() %}
-<section class="widget" id="widget-tagcloud">
-  <h3 class="widget-title">标签云</h3>
-  {{ tagcloud() }}
-</section>
 {% endif %}
 
+{% if theme.sidebar.links %}
 <section class="widget" id="widget-links">
-  <h3 class="widget-title">其他</h3>
+  <h3 class="widget-title">链接</h3>
   <ul class="menu">
     {% for name, item in theme.menu_links %}
       {% set itemName = name.toLowerCase() %}
@@ -54,3 +52,11 @@
     {% endfor %}
   </ul>
 </section>
+{% endif %}
+
+{% if theme.sidebar.tagcloud and is_home() %}
+<section class="widget" id="widget-tagcloud">
+  <h3 class="widget-title">标签云</h3>
+  {{ tagcloud() }}
+</section>
+{% endif %}

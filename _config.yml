@@ -27,6 +27,14 @@ canonical: false
 # Sidebar Settings
 # ---------------------------------------------------------------
 
+# Sidebar widgets
+sidebar:
+  recent_posts: true
+  categories: true
+  pages: true
+  links: true
+  tagcloud: true
+
 # Pages menu widget
 menu_pages:
   archives:
