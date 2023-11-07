@@ -16,11 +16,11 @@
   });
 </script>
 
-{%- if theme.google_analytics %}
-  {%- if theme.google_analytics_api %}
+{%- if theme.google_analytics.enable %}
+  {%- if theme.google_analytics.api %}
     <script>
-      window.ga_tid = '{{ theme.google_analytics}}';
-      window.ga_api = '{{ theme.google_analytics_api}}';
+      window.ga_tid = '{{ theme.google_analytics.tracking_id }}';
+      window.ga_api = '{{ theme.google_analytics.api }}';
     </script>
     <script src="{{ theme.vendors.cfga }}"></script>
   {%- else %}
@@ -30,7 +30,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '{{ theme.google_analytics}}', 'auto');
+      ga('create', '{{ theme.google_analytics.tracking_id }}', 'auto');
       ga('send', 'pageview');
     </script>
   {%- endif %}
@@ -41,4 +41,10 @@
     window.post_views_api = '{{ theme.post_views_counter.api }}';
   </script>
   <script src="{{ url_for('js/post-views.js') }}"></script>
+{%- endif %}
+
+{%- if theme.umami.enable %}
+  <script async src="{{ theme.umami.script_url }}"
+    data-website-id="{{ theme.umami.website_id }}">
+  </script>
 {%- endif %}

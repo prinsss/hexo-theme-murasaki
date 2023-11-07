@@ -98,10 +98,19 @@ giscus:
   lang: en
   loading: lazy
 
-# Google Analytics. For server-side ga,
+# Google Analytics
 # See: https://github.com/SukkaW/cloudflare-workers-async-google-analytics
 google_analytics:
-google_analytics_api:
+  enable: false
+  api:
+  tracking_id:
+
+# Umami - A self-hosted alternative to Google Analytics.
+# See: https://github.com/umami-software/umami
+umami:
+  enable: false
+  script_url:
+  website_id:
 
 # Google Search Console
 google_site_verification:
